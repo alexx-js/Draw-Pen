@@ -35,8 +35,8 @@ nav {
 }
 
 #pencil {
-  height: 700px;
-  width: 75px;
+  height: 500px;
+  width: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ nav {
 }
 
 #pencil img {
-  height: 525px;
+  height: 425px;
 }
 
 #nav {
