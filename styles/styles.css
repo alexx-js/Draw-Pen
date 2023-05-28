@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #353535;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#pencil {
+  height: 700px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #454545;
+  border-radius: 9px;
+}
+
+#pencil img {
+  height: 525px;
+}
+
+#nav {
+  display: flex;
+}
+
+#list {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+
+#navegationItems {
+  display: none;
+}
+
+#toogleNav {
+  display: none;
+}
+
+#toogleNav ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+
+#toogleNav ul li a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#toogleNav ul li a:hover,
+#toogleNav ul li a:focus,
+#toogleNav ul li a:active {
+  text-decoration: underline;
+}
+
+#navegationItems ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+
+#navegationItems ul li a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#navegationItems ul li a:hover,
+#navegationItems ul li a:focus,
+#navegationItems ul li a:active {
+  text-decoration: underline;
+}
+
+#main-canvas {
+  margin: 55px 0 20px 0;
+  background-color: #454545;
+  border-radius: 9px;
+}
+
+#tablet-canvas,
+#cellphone-canvas {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    width: auto;
+    height: 200px;
+  }
+
+  #list {
+    display: none;
+  }
+
+  #navegationItems {
+    display: block;
+  }
+
+  #toogleNav ul {
+    gap: 50px;
+  }
+
+  body {
+    flex-direction: column-reverse;
+  }
+
+  #tablet-canvas {
+    display: block;
+    margin: 55px 0 0 7px;
+    background-color: #454545;
+    border-radius: 9px;
+  }
+
+  #main-canvas,
+  #cellphone-canvas {
+    display: none;
+  }
+
+  #pencil {
+    height: 500px;
+    width: 55px;
+    transform: rotate(270deg);
+  }
+
+  #pencilImage {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    width: auto;
+  }
+
+  #list {
+    display: none;
+  }
+
+  #navegationItems {
+    display: block;
+  }
+
+  #toogleNav ul {
+    gap: 50px;
+  }
+
+  body {
+    flex-direction: column-reverse;
+  }
+
+  #cellphone-canvas {
+    display: block;
+    margin: 55px 0 0 0;
+    background-color: #454545;
+    border-radius: 9px;
+  }
+
+  #main-canvas,
+  #tablet-canvas {
+    display: none;
+  }
+
+  #pencil {
+    height: 400px;
+    width: 45px;
+    transform: rotate(270deg);
+  }
+
+  #pencilImage {
+    width: 300px;
+  }
+}
